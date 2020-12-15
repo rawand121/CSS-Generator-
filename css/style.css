@@ -135,6 +135,9 @@ select {
     text-align: center;
   }
 
+  .codes{
+    width : 90%; 
+  }
   .border div,
   .textShadow div,
   .margin div,
