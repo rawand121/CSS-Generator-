@@ -126,6 +126,24 @@ select {
   }
 }
 
+@media only screen and (max-width : 400px){
+  .border,
+  .textShadow,
+  .margin,
+  .padding{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .border div,
+  .textShadow div,
+  .margin div,
+  .padding div{
+    width: 100%;
+  }
+}
+
+
 @media only screen and (max-width : 330px){
   .codes{
     width: 90%;
