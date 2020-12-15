@@ -1,0 +1,133 @@
+html {
+  min-height: 100%;
+  background-color: #0769ad;
+  box-shadow: 0 0 8px 4px #06599d inset;
+}
+
+body {
+  font-size: 16px;
+}
+
+#content {
+  overflow: auto;
+  width: 80%;
+  background-color: #fff;
+  margin: 30px auto 0 auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav li {
+  text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  background-color: #0769ad;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #06599d;
+  transition: transform 0.3s;
+}
+.nav li:active {
+  transform: translateY(3px);
+  box-shadow: 3px 3px 3px #06599d;
+}
+label {
+  text-align: end;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+h1 {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.codes {
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  padding: 20px 0 20px 20px;
+  margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px #333;
+  list-style: none;
+}
+.codes li{
+  margin: 10px 0;
+}
+.text,
+.textt,
+.border,
+.textShadow,
+.bg,
+.margin,
+.padding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+input,
+select {
+  margin-left: 5px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.text div,
+.textt div,
+.border div,
+.textShadow div,
+.bg div,
+.margin div,
+.padding div {
+  width: 40%;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width : 700px){
+  .nav {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .nav li{
+    width: 25%;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  .text div{
+    display: block !important;
+    width: 100% !important;
+    text-align: center;
+    margin: 10px 0 !important;
+  }
+}
+
+@media only screen and (max-width : 500px){
+  .nav li{
+    width: 33%;
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width : 330px){
+  .codes{
+    width: 90%;
+  }
+}

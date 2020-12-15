@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <title>CSS Generator</title>
+  </head>
+  <body>
+    <div id="content">
+      <ul class="nav">
+        <li data-prop="text">Text</li>
+        <li data-prop="border">Border</li>
+        <li data-prop="TXTshadow">Text Shadow</li>
+        <li data-prop="bg">Background</li>
+        <li data-prop="margin">Margin</li>
+        <li data-prop="padding">Padding</li>
+      </ul>
+      <div class="textt">
+        <h1>Hello World</h1>
+      </div>
+      <br />
+      <div class="text">
+        <div style="width: auto; margin: 0 15px">
+          <label for="TXTColor">Color : </label>
+          <input type="color" id="TXTColor" />
+        </div>
+        <div style="width: auto; margin: 0 15px">
+          <label for="fontFam">Font-Family : </label>
+          <select name="fontFam" id="fontFam">
+            <option value="sans-serif">Sans-Serif</option>
+            <option value="Lucida Sans Unicode">Lucida</option>
+            <option value="cursive">Cursive</option>
+            <option value="Verdana">Verdana</option>
+          </select>
+        </div>
+        <div style="width: auto; margin: 0 15px;">
+          <label for="fontSize">Font-Size : </label>
+          <input type="number" name="fontSize" id="fontSize" value="32" />
+        </div>
+      </div>
+
+      <div class="border">
+        <div>
+          <label for="siz">Border-Size : </label>
+          <input type="range" id="siz" min="1" max="10" />
+        </div>
+        &nbsp;&nbsp;
+        <div>
+          <label for="borderStyle">Border-Style : </label>
+          <select name="borderStyle" id="borderStyle">
+            <option value="none">...</option>
+            <option value="solid">Solid</option>
+            <option value="dashed">Dashed</option>
+            <option value="dotted">Dotted</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="bColor">Border-Color : </label>
+          <input type="color" id="bColor" />
+        </div>
+        &nbsp;&nbsp;
+        <div>
+          <label for="BorderRadius">Border-Radius : </label>
+          <input type="range" name="rad" id="BorderRadius" />
+        </div>
+      </div>
+
+      <div class="textShadow">
+        <div>
+          <label for="horizental">Horizental : </label>
+          <input type="range" id="horizental" min="1" max="10" />
+        </div>
+        &nbsp;&nbsp;
+        <div>
+          <label for="vertical">Vertical : </label>
+          <input type="range" name="vertical" id="vertical" min="1" max="10" />
+        </div>
+        <div>
+          <label for="color">Color : </label>
+          <input type="color" id="color" value="#ffffff" />
+        </div>
+        &nbsp;&nbsp;
+        <div>
+          <label for="Blur">Blur : </label>
+          <input type="range" name="blur" id="Blur" min="1" max="10" />
+        </div>
+      </div>
+
+      <br />
+      <div class="bg">
+        <label for="background">Background-Color : </label>
+        <input type="color" id="background" value="#000000" />
+      </div>
+
+      <div class="margin">
+        <div>
+          <label for="ml">Margin-Left : </label>
+          <input type="range" id="ml" min="0" max="30" value="0" />
+        </div>
+        &nbsp;&nbsp;
+        <div>
+          <label for="mt">Margin-Top : </label>
+          <input type="range" id="mt" min="0" max="30" value="0" />
+        </div>
+        <div>
+          <label for="mr">Margin-Right : </label>
+          <input type="range" id="mr" min="0" max="30" value="0" />
+        </div>
+        &nbsp;&nbsp;
+        <div>
+          <label for="mb">Margin-Bottom : </label>
+          <input type="range" id="mb" min="0" max="30" value="0" />
+        </div>
+      </div>
+
+      <div class="padding">
+        <div>
+          <label for="pl">Padding-Left : </label>
+          <input type="range" id="pl" min="0" max="30" value="0" />
+        </div>
+        &nbsp;&nbsp;
+        <div>
+          <label for="pt">Padding-Top : </label>
+          <input type="range" id="pt" min="0" max="30" value="0" />
+        </div>
+
+        <div>
+          <label for="pr">Padding-Right : </label>
+          <input type="range" id="pr" min="0" max="30" value="0" />
+        </div>
+        &nbsp;&nbsp;
+        <div>
+          <label for="pb">Padding-Bottom : </label>
+          <input type="range" id="pb" min="0" max="30" value="0" />
+        </div>
+      </div>
+    </div>
+    <ul class="codes"></ul>
+    <script src="./JS/app.js"></script>
+  </body>
+</html>
